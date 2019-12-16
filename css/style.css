@@ -656,6 +656,8 @@ img {
   display: none; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -668,6 +670,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
@@ -687,6 +692,7 @@ img {
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
+    line-height: 1.857rem;
     text-align: center;
     margin: 0;
     margin-bottom: 2.428rem; }
@@ -698,9 +704,13 @@ img {
     .modal__input:last-of-type {
       margin-bottom: 1rem; }
   .modal__policy {
+    font-size: 1.243rem;
     margin-bottom: 2.7rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    font-family: 'Futura Demi', cursive;
+    font-size: 0.929rem;
+    padding: 1.257rem 3.171rem; }
 
 @media screen and (max-width: 1380px) {
   .menu__contacts {

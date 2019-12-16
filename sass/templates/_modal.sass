@@ -1,4 +1,6 @@
 .modal
+  opacity: 0
+  visibility: hidden
   position: fixed
   z-index: 199
   left: 0
@@ -11,6 +13,9 @@
   display: flex
   align-items: center
   justify-content: center
+  &--visible
+    opacity: 1
+    visibility: visible
   &__dialog
     position: relative
     max-width: 36.36rem
@@ -30,6 +35,7 @@
   &__title
     font-family: 'Yeseva One', cursive
     font-size: 1.357rem
+    line-height: 1.857rem
     text-align: center
     margin: 0
     margin-bottom: 2.428rem
@@ -41,6 +47,10 @@
     &:last-of-type
       margin-bottom: 1rem
   &__policy
+    font-size: 1.243rem
     margin-bottom: 2.7rem
   &__button
     align-self: flex-end
+    font-family: 'Futura Demi', cursive
+    font-size: 0.929rem
+    padding: 1.257rem 3.171rem
