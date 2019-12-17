@@ -17,24 +17,21 @@
 @media screen and ( max-width: 1060px) //до 1060px
   .menu
     &__contacts
-      flex-basis: 34%
-    &__logo
-      flex-basis: 20%
-  .hero
-    &__instagram
-      display: none    
-@media screen and ( max-width: 1060px) //до 1060px
-  .menu
-    &__contacts
       flex-basis: 19%
     &__logo
       flex-basis: 23%
     &__nav
-      flex-basis: 55%      
+      flex-basis: 55%
+  .hero
+    &__instagram
+      display: none              
   .contacts
     justify-content: flex-end
     &__button
       display: none
+  .card
+    &__text
+      margin-top: -4.3rem
 @media screen and ( max-width: 820px) //до 820px
   .nav
     display: none
@@ -43,7 +40,7 @@
       flex-basis: 49%
     &__logo
       flex-basis: 49%                                     
-@media screen and ( max-width: 760px ) /*breakpoint4: от 576 до 760px — смартфоны / планшеты*/
+@media screen and ( max-width: 760px ) //до 760px
   .row
     flex-direction: column
     align-items: center
@@ -53,7 +50,15 @@
   .card
     &__text
       margin-left: 0
-@media screen and ( max-width: 600px ) /*breakpoint5: от 320 до 600px — смартфоны */
+@media screen and ( max-width: 650px ) //до 650px
+  .hero
+    &__button
+      display: block
+      min-width: 100%
+      font-size: 0.94rem
+      padding: 1.15rem 0
+      margin-bottom: 1.85rem     
+@media screen and ( max-width: 600px ) //до 600px
   .container
     width: 90.4%
     &__header
@@ -66,16 +71,16 @@
   .col
     margin-bottom: 0.8rem
   .card
+    justify-content: flex-start
     &__text
       max-width: 79.4%
       margin-top: -10.1rem
       padding: 1.7rem 0 0.01rem 2rem
-      margin-left: 0
+      // margin-left: 0
       box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05)
     &__title
       font-size: 1.07rem
-      margin-top: 0
-      margin-bottom: 0.7rem
+      margin: 0 0 0.7rem 0
     &__list
       font-size: 0.94rem
       line-height: 174.4%
@@ -108,23 +113,22 @@
   .hero
     &__title
       font-size: 1.64rem
+      line-height: 136.13% 
       max-width: 22.86rem
-      margin-bottom: 1.14rem 
+      margin-bottom: 0.84rem
     &__scroll-down
       display: none
     &__content
       flex-direction: column
-      max-width: 100%  
+      max-width: 100%
+      margin: auto
+      margin-top: -11.9rem  
     &__text
       font-size: 1.29rem
+      line-height: 136.13%
       max-width: 22.86rem
-      margin-bottom: 2.28rem
-    &__button
-      display: block
-      min-width: 100%
-      padding: 1.35rem 3rem
-      margin-bottom: 1.85rem
-@media screen and (max-height: 570px )
+      margin-bottom: 2.8rem
+@media screen and (max-height: 570px ) //высота до 570px 
  .hero
    &__scroll-down
      display: none
@@ -133,17 +137,21 @@
     display: flex
     align-items: flex-start
     justify-content: space-between
+  .col
+    flex-basis: 31.715%  
   .card
-    flex-basis: 32%
     &__list
       li:nth-child(n+8)
         display: block
   .design
     background-color: $light
+    &__pricetag
+      text-align: left
+      padding-left: 2.5rem
     &__section
       &-title
         color: $dark
-        margin-bottom: 3.38rem
+        margin-bottom: 3.2rem
     &__card
       margin-bottom: 5.7rem  
   .section
@@ -151,3 +159,6 @@
       &__description
         max-width: 52.9rem
         font-size: 1.425rem
+        margin-top: 1.64rem
+      &__heading
+        font-size: 1.4rem
