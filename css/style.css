@@ -350,7 +350,7 @@ template {
 .input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
@@ -359,7 +359,8 @@ template {
 
 .policy__checkbox {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
   .policy__checkbox:checked + .policy__label::before {
     background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
 
@@ -695,22 +696,23 @@ img {
     line-height: 1.857rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 1.928rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.428rem; }
+    margin-bottom: 3.228rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+      margin-bottom: 1.2rem; }
   .modal__policy {
-    font-size: 1.243rem;
+    font-size: 1.143rem;
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end;
     font-family: 'Futura Demi', cursive;
     font-size: 0.929rem;
-    padding: 1.257rem 3.171rem; }
+    padding: 1.257rem 3.271rem 1.457rem 3.171rem;
+    margin-right: 0.35rem; }
 
 @media screen and (max-width: 1380px) {
   .menu__contacts {
